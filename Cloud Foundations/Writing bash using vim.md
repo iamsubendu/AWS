@@ -57,6 +57,8 @@ To save and exit -> :wq
 
 To exit without saving -> :q!
 
+To exit force without saving -. :qa!
+
 Yank or copy the line -> yy
 Copy 3 lines from where the cursor -> 3yy
 
@@ -88,16 +90,55 @@ To replace all words -> :%s/wordToChange/ChangedWord/g
 
 ## Advantages of using shell script
 
-1. Scripts can execute commands much faster than manual execution. This is especially beneficial for tasks that require running multiple commands sequentially.
+1. Scripts can execute commands much faster than manual execution.
+   This is especially beneficial for tasks that require running multiple commands sequentially.
 
-2. Shell scripts use a straightforward syntax that is easy to learn, making it accessible for users with varying levels of programming experience. Modifying scripts is also relatively simple.
+2. Shell scripts use a straightforward syntax that is easy to learn, making
+   it accessible for users with varying levels of programming experience. Modifying scripts is also relatively simple.
 
-3. Shell scripts can easily integrate with other command-line tools and utilities, allowing for complex workflows that combine multiple commands and applications.
+3. Shell scripts can easily integrate with other command-line tools and utilities,
+   allowing for complex workflows that combine multiple commands and applications.
 
-4. Many shell scripts can run on different Unix-like systems (Linux, macOS, etc.) with minimal changes, making them versatile for cross-platform environments.
+4. Many shell scripts can run on different Unix-like systems (Linux, macOS, etc.)
+   with minimal changes, making them versatile for cross-platform environments.
 
-5. Shell scripts have direct access to system commands and utilities, allowing for powerful system management and automation.
+5. Shell scripts have direct access to system commands and utilities, allowing for
+   powerful system management and automation.
 
-6. Shell scripts can include error-checking mechanisms, allowing for more robust automation by handling unexpected situations graceful
+6. Shell scripts can include error-checking mechanisms, allowing for more robust
+   automation by handling unexpected situations graceful
 
-7. Shell scripts can be easily shared and deployed across different systems, making it easy to replicate environments or share solutions among team members.
+7. Shell scripts can be easily shared and deployed across different systems, making
+   it easy to replicate environments or share solutions among team members.
+
+## Start
+
+You can directly create a file and go to edit mode -> vi fileName.bash
+
+<b>#!/bin/bash</b><br>
+The line #!/bin/bash at the beginning of a script is known as a hashbang. It indicates
+which interpreter should be used to execute the script. In this case, it specifies that
+the script should be run using the Bash shell.
+
+![alt text](image-2.png)
+
+chmod 755 fileName.sh
+
+sh fileName.sh
+
+![alt text](image-3.png)
+
+![alt text](image-4.png)
+
+![alt text](image-5.png)
+
+![alt text](image-6.png)
+
+![alt text](image-7.png)
+
+![alt text](image-8.png)
+;; -> break
+
+![alt text](image-9.png)
+return 0 -> success
+return 1 -> error
